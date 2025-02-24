@@ -1,21 +1,62 @@
-@import '@/styles/colors.scss';
-.login {
+.login{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    
+    &__form{
+        width: 30%;
+        padding: 10px 30px 30px 30px;
+        margin: 15px 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        &__title{
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        &__error{
+            text-align: center;
+            color: red;
+            margin-top: 6px;
+            font-size: 16px;
+        }
+        &__item{
+            margin-bottom: 10px;
+            flex-direction: column;
+            display: flex;
+
+            &__label{
+                font-size: 16px;
+                font-weight: 600;
+                color: rgb(25, 25, 25);
+            }
+            &__input{
+                padding: 9px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+        }
+        &__btn{
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+    &__link{
+        margin-top: 10px;
+        font-size: 16px;
+        color: #333;
+        a {
+            color: blue;
+        }
+    }
 
 }
-.login button {
-    margin : 0.5rem 0;
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    background-color: map-get($scehma, primary);
-    color:#fff;
-    border: none;
-    cursor: pointer;
-}
-
-// button {
-// }
