@@ -49,6 +49,19 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        &__google{
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #fa0b0b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        &__or{
+            margin: 5px 0;
+            text-align: center;
+        }
     }
     &__link{
         margin-top: 10px;

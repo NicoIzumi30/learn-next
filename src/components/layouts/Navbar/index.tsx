@@ -6,7 +6,8 @@ const Navbar = () => {
     return  (
         <div className={style.navbar}>
             <div>Navbar</div>
-            <div>
+            <div className={style.profile}>
+                {data?.user?.image && (<img className={style.avatar} src={data.user.image} />)}
                 {data && data.user.fullname}
                 {data ? (
                     <button className={style.button} onClick={() => signOut()}>Sign Out</button>
