@@ -56,6 +56,7 @@ const authOptions: NextAuthOptions = {
         };
 
         await signInWithGoogle(data, (result: any) => {
+          console.log("Result : "+result.data);
           if (result.status) {
             token.fullname = result.data.fullname;
             token.email = result.data.email;
@@ -65,6 +66,7 @@ const authOptions: NextAuthOptions = {
           }
         });
       }
+      console.log(token);
       return token;
     },
     async session({ session, token }: any) {
@@ -80,6 +82,7 @@ const authOptions: NextAuthOptions = {
       if (token.role) {
         session.user.role = token.role;
       }
+      console.log(token);
       return session;
     },
   },
