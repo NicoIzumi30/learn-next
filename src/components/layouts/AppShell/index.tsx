@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import Navbar from "../Navbar"
 import {Roboto} from 'next/font/google'
 import dynamic from "next/dynamic";
 
