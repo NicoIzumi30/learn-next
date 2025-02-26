@@ -1,12 +1,13 @@
 import { ProductType } from '@/types/product.type';
 import styles from './DetailProduct.module.scss';
+import Image from 'next/image';
 const DetailProductView = ({product} : {product:ProductType}) => {
     return (
         <>
         <h1 className={styles.title}>Detail Product</h1>
         <div className={styles.detailProduct}>
         <div className={styles.detailProduct__image}>
-          <img src={product.image} alt={product.name} />
+          <Image src={product.image} alt={product.name} width={300} height={300} />
         </div>
         <h4 className={styles.detailProduct__name}>
           {product.name}
