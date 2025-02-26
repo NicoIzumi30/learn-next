@@ -80,7 +80,7 @@ const LoginView = () => {
         </button>
       </div>
       <p className={styles.login__link}>
-        Don't have an account <Link href="/auth/register">Register</Link>
+        Dont have an account <Link href="/auth/register">Register</Link>
       </p>
     </div>
   );
